@@ -227,7 +227,7 @@ section {
 .social-media {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
     
     width: 220px;
     height: 45px;
@@ -288,7 +288,7 @@ section {
     top: 4%;
     left: -53px;
     display: flex;
-    justify-content: center;
+    justify-content: center ;
     align-items: center;
     overflow: hidden;
     padding: 2rem;
@@ -332,7 +332,15 @@ section {
     animation: rotateText 30s linear infinite;
 }
 
-
+.text b {
+    position: absolute;
+    transform-origin: 0 247px;
+    display: block;
+    top: 0;
+    left: 50%;
+    font-size: 1.2rem;
+    
+}
 
 
 
@@ -375,5 +383,14 @@ section {
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateText {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
     }
 }
