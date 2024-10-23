@@ -389,7 +389,7 @@ padding: 3rem 0;
 
 }
 
-.about-btn button {
+.about-btn button, .cvContent a {
     background: var(--gradient-white-bg2);
     padding: 10px;
     border-radius: 5px;
@@ -397,9 +397,17 @@ padding: 3rem 0;
     font-size: 1rem;
     font-weight: 500;
     color: #000;
-    
+    box-shadow: rgba(60,64,67,0.3)0px 1px 0,
+                rgba(60,64,67,0.15)0px 2px 6px 2px;
+    margin-right: .5rem;
+    cursor: pointer;
+    transition: all .3s ease;
 }
 
+.about-btn button.active {
+    background: var(--gradient-color-bg);
+    color: #fff;
+}
 
 
 
