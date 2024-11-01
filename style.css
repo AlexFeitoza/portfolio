@@ -493,9 +493,40 @@ padding: 3rem 0;
     transform: scale(1.2);
 }
 
+.icon-services span {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: -5px;
+    top: -5px;
+    background: var(--gradient-color-bg);
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
 
+.servicesItem h3 {
+    margin: 1rem 0 0.5rem;
+}
 
+.servicesItem p {
+    margin-bottom: 1.5rem;
+    font-size:  .9rem;
+    color: var(--font-color);
 
+}
+
+.services .readMore {
+    background: var( --gradient-white-bg2);
+    box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
+    rgba(0,0,0,0.6)0px 1px 2px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    margin-right: .8rem;
+    cursor: pointer;
+}
 
 
 
