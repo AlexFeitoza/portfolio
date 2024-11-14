@@ -27,3 +27,15 @@ buttons.forEach((button, index) => {
         button.classList.add('active');
     });
 });
+
+
+// portfolio fillter
+
+var mixer = mixitup('.portfolio-galeria',{
+    selectors: {
+        target: '.portfolio-box'
+    },
+    animation: {
+        duration: 500
+    }
+});

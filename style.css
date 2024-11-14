@@ -551,7 +551,7 @@ padding: 3rem 0;
     transition: all .3s ease;
 }
 
-.fillter-buttons button:hover {
+.fillter-buttons button:hover, button.mixitup-control-active {
     background: var(--gradient-color-bg);
     color: #fff;
 }
