@@ -610,7 +610,14 @@ padding: 3rem 0;
 
 /* ================ Contact section css code ===================== */
 
-.contactSkills {
+
+.down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato-email {
     display: flex;
     justify-content: center;
     align-items: center;
