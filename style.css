@@ -656,13 +656,25 @@ padding: 3rem 0;
     justify-content: space-between;
 }
 
+.input-box input {
+    width: 49%;
+}
 
+form input:focus, form textarea:focus {
+    filter: brightness(100%);
+    background: #d2e9ff;
+    border: 2px solid #f8caca;
+}
 
+form textarea {
+    resize: none;
+}
 
-
-
-
-
+form .btn {
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+}
 
 
 
