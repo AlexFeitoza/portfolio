@@ -342,6 +342,19 @@ section {
     
 }
 
+/* ================ Skills section css code ===================== */
+
+.class-habilidade {
+    background-color: #000;
+    height: 300px;
+}
+
+.content-skill {
+    background-color: #000;
+    color: #770753;
+}
+
+
 /* ================ About section css code ===================== */
 
 
