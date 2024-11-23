@@ -39,3 +39,24 @@ var mixer = mixitup('.portfolio-galeria',{
         duration: 500
     }
 });
+
+
+// side progress bar
+
+let calcScrollValue = ()=>{
+    let scrollProgress = document.getElementById("#progress");
+    let pos = document.documentElement.scrollTop;
+
+    let calcHeigth = document.documentElement.scrollHeight - document.documentElement.clientHeigth;
+    let scrollValue = Math.round((pos * 100)/calcHeigth);
+
+    if(pos > 100){
+        scrollProgress.style.display = "grid";
+    }else {
+        scrollProgress.style.display = "none"
+    }
+    
+}
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
