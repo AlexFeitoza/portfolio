@@ -44,7 +44,7 @@ var mixer = mixitup('.portfolio-galeria',{
 // side progress bar
 
 let calcScrollValue = ()=>{
-    let scrollProgress = document.getElementById("#progress");
+    let scrollProgress = document.getElementById("progress");
     let pos = document.documentElement.scrollTop;
 
     let calcHeigth = document.documentElement.scrollHeight - document.documentElement.clientHeigth;
@@ -55,6 +55,12 @@ let calcScrollValue = ()=>{
     }else {
         scrollProgress.style.display = "none"
     }
+
+    scrollProgress.addEventListener("click",()=>{
+        document.documentElement.scrollTop = 0;
+    });
+
+    scrollProgress.style.background = `conic-gradient(#fff ${scrollValue}%,#e6006d ${scrollValue}%)`;
     
 }
 
