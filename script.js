@@ -1,10 +1,21 @@
 //ACTIVE MENU HAMBURGER
 
 let menuIcon = document.querySelector(".menu-icon");
+let navlist = document.querySelector(".navlist");
 
 menuIcon.addEventListener("click",()=>{
     menuIcon.classList.toggle("active");
+    navlist.classList.toggle("active");
+    document.body.classList.toggle("open");
 });
+
+// Remove navlist
+
+navlist.addEventListener("click", ()=>{
+    navlist.classList.remove("active");
+    menuIcon.classList.remove("active");
+    document.body.classList.remove("open");
+})
 
 // rotate text js code
 
@@ -83,6 +94,13 @@ activeMenu();
 
 window.addEventListener("scroll", activeMenu);
 
-//////////// open and close navbar
+//////////// scroll reveal
 
-let navlist = document.querySelector(".navlist");
+ScrollReveal({
+     distance: "90px",
+     duration: 2000,
+     delay: 200,
+     reset: true ,
+});
+
+ScrollReveal().reveal('.hero-info,.main-text,.proposal,.heading', { origin: "top" });
