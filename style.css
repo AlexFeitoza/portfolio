@@ -731,31 +731,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*=============@keyframes =============================*/
 
 @keyframes moveText {
@@ -798,5 +773,77 @@ footer {
     }
     100%{
         transform: rotate(0deg);
+    }
+}
+
+
+/*============================ Break Points ======================*/
+
+@media(max-width:1200px){
+    html{
+        font-size: 95%;
+    }
+}
+
+@media(max-width:991px){
+    header,section,footer{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+    .home, .portfolio-box {
+        flex-direction: column-reverse;
+    }
+
+    .about, .down {
+        flex-direction: column;
+    }
+
+    .about .about-img .aboutHero{
+        width: 100%;
+    }
+
+    .portfolio-img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .portfolio-galeria {
+        grid-template-columns: repeat(auto-fill,minmax(250px , 1fr));
+    }
+
+    .img-hero {
+        margin-top: 3rem;
+    }
+}
+
+@media(max-width:768px){
+    .proposal{
+        display: none;
+    }
+
+    .menu-icon .bar, .menu-icon::after, .menu-icon::before {
+        display: block;
+    }
+
+    ul.navlist {
+        position: absolute;
+        top: 100%;
+        transition: all .3s ease;
+        width: 100%;
+        text-align: center;
+        display: block;
+        background: var(--gradient-white-bg) ;
+        left: 0;
+        border-top: 2px solid rgba(248,202,292,0.7);
+    }
+
+    .navlist {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    .navlist .active {
+        top: 100%;
     }
 }
