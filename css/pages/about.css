@@ -10,7 +10,7 @@
 }
 
 .about .about-img .aboutHero {
-    width: 400px;
+    width: 40vw;
     height: auto;
 }
 
@@ -42,9 +42,9 @@ padding: 3rem 0;
 
 }
 
-.about-btn button, .cvContent a {
+.about-btn button,.cvContent a {
     background: var(--gradient-white-bg2);
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 5px;
     border: none;
     font-size: 1rem;
@@ -63,7 +63,7 @@ padding: 3rem 0;
 }
 
 .text-box {
-    margin: .8rem;
+    margin: .8rem 0;
 }
 
 .content-btn > .content:not(:first-child) {

@@ -39,11 +39,12 @@ section {
     font-weight: 700;
     margin-bottom: 1rem;
     color: transparent;
-    -webkit-text-stroke: 0.1w #770753;
+    -webkit-text-stroke: 0.1vw #770753;
     background: var(--gradient-color-bg);
     background-repeat: no-repeat;
     -webkit-background-clip: text ;
     background-position: 0 0;
+    transition: .6s;
     letter-spacing: 2px;
     animation: moveText 3s linear infinite;
     animation-delay: 2s;
@@ -98,7 +99,6 @@ section {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    
     width: 220px;
     height: 45px;
 

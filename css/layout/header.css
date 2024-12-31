@@ -1,4 +1,10 @@
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
 header {
     padding: 15px 8%;
     width: 100%;
@@ -42,15 +48,23 @@ ul.navlist {
 }
 
 .navlist li a {
+    display: inline-flex;
     text-decoration: none;
     font-weight: 600;
     color: #000;
 }
 
-.navlist li a:hover, .navlist li a.active{
+.navlist li a:hover,.navlist li a.active{
     background: var(--gradient-color-bg);
     -webkit-background-clip: text;
     color: transparent;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-gap: .8rem;
 }
 
 .btn {
@@ -62,12 +76,16 @@ ul.navlist {
     transition: all .3s ease;
 }
 
-.btn:hover, .btn-box .d-CV:hover{
+.btn:hover,.btn-box .d-CV:hover{
     box-shadow: var(--hover-box-shadow);
 }
 
 .menu-icon {
-   display: flex;
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
 }
 
 .menu-icon .bar,
@@ -105,19 +123,12 @@ header .navlist.active {
     transform: rotate(45deg)translate(-8px , -8px);
 }
 
-.menu-icon.active .bar:nth-child(1) {
-    transform: rotate(45deg);
-    margin-top: 7px;
-}
-
-.menu-icon.active .bar:nth-child(2) {
+.menu-icon.active .bar {
     opacity: 0;
 }
 
-.menu-icon.active .bar:nth-child(3) {
-    transform: rotate(-45deg);
-    margin-top: -7px;
-}
+
+
 
 @media (max-width: 768px) {
     .navlist {
