@@ -1,0 +1,64 @@
+.down {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contato-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contato-info {
+    width: 100%;
+    background: var(--gradient-white-bg2);
+    box-shadow: rgba(0,0,0,0.18)0px 2px 4px;
+    padding: 1rem;
+    border-radius: 10px;
+
+}
+
+.contato-info input,
+.contato-info form textarea {
+    width: 100%;
+}
+
+.contato-info form input,
+.contato-info form textarea {
+    width: 100%;
+    padding: .8rem;
+    border: 2px solid #e8e1e1;
+    margin: .5rem 0;
+    background: #e8f1f9;
+    border-radius: 5px;
+    outline: none;
+    transition: .3s;
+
+}
+
+.contato-info form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box input {
+    width: 49%;
+}
+
+form input:focus, form textarea:focus {
+    filter: brightness(100%);
+    background: #d2e9ff;
+    border: 2px solid #f8caca;
+}
+
+form textarea {
+    resize: none;
+}
+
+form .btn {
+    padding: 15px 20px;
+    cursor: pointer;
+    border: none;
+}
