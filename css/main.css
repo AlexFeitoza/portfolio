@@ -6,6 +6,7 @@
 @import './layout/sections.css';
 
 @import './pages/home.css';
+@import './pages/portfolio.css';
 @import './pages/about.css';
 @import './pages/contact.css';
 @import './pages/services.css';

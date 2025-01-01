@@ -60,13 +60,26 @@
     overflow: hidden;
 }
 
-.portfolio-img:hover {
+.portfolio-box:hover img{
     transform: scale(1.1);
 }
 
 .portfolio-content a.readMore {
     padding: 8px 12px;
     font-size: .8rem;
+}
+
+.readMore {
+    background: var( --gradient-white-bg2);
+    box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
+    rgba(0,0,0,0.6)0px 1px 2px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    margin-right: .8rem;
+    cursor: pointer;
 }
 
 .portfolio-content p {

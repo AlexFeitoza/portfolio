@@ -85,7 +85,7 @@
 
 }
 
-.services .readMore {
+.services {
     background: var( --gradient-white-bg2);
     box-shadow: rgba(0,0,0,0.1)0px 1px 3px 0,
     rgba(0,0,0,0.6)0px 1px 2px 0px;
